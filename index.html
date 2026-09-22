@@ -1,0 +1,263 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Deskspace</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+  <div class="app">
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-mark">D</div>
+
+        <div>
+          <strong>Deskspace</strong>
+          <span>organiza tu caos</span>
+        </div>
+      </div>
+
+
+      <nav class="navigation">
+
+        <button
+          class="nav-button active"
+          data-page="dashboard"
+        >
+          <span>⌂</span>
+          <span>Inicio</span>
+        </button>
+
+        <button
+          class="nav-button"
+          data-page="tasks"
+        >
+          <span>✓</span>
+          <span>Tareas</span>
+        </button>
+
+        <button
+          class="nav-button"
+          data-page="calendar"
+        >
+          <span>□</span>
+          <span>Calendario</span>
+        </button>
+
+        <button
+          class="nav-button"
+          data-page="ideas"
+        >
+          <span>✦</span>
+          <span>Ideas</span>
+        </button>
+
+        <button
+          class="nav-button"
+          data-page="paint"
+        >
+          <span>✎</span>
+          <span>Paint</span>
+        </button>
+
+        <button
+          class="nav-button"
+          data-page="settings"
+        >
+          <span>⚙</span>
+          <span>Ajustes</span>
+        </button>
+
+      </nav>
+
+
+      <div class="sidebar-bottom">
+        <span class="online-dot"></span>
+        Guardado localmente
+      </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main class="main">
+
+      <!-- =======================================
+           DASHBOARD
+      ======================================== -->
+
+      <section
+        id="dashboard"
+        class="page active"
+      >
+
+        <header class="page-top">
+          <div>
+            <span class="eyebrow">DASHBOARD</span>
+
+            <h1 id="dashboardGreeting">
+              Buenos días.
+            </h1>
+
+            <p id="dashboardDate"></p>
+          </div>
+        </header>
+
+
+        <div class="dashboard-layout">
+
+          <!-- RESUMEN -->
+
+          <div class="dashboard-main">
+
+            <div class="overview-card">
+
+              <div>
+                <span class="eyebrow">
+                  RESUMEN
+                </span>
+
+                <h2 id="overviewTitle">
+                  Vamos viendo.
+                </h2>
+
+                <p id="overviewText">
+                  Aquí aparecerá lo importante de hoy.
+                </p>
+              </div>
+
+              <div class="overview-number">
+                <strong id="todayTaskCount">0</strong>
+                <span>para hoy</span>
+              </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+              <div class="stat-card">
+                <span class="stat-label">
+                  Pendientes
+                </span>
+
+                <strong id="pendingStat">
+                  0
+                </strong>
+              </div>
+
+
+              <div class="stat-card">
+                <span class="stat-label">
+                  Completadas
+                </span>
+
+                <strong id="completedStat">
+                  0
+                </strong>
+              </div>
+
+
+              <div class="stat-card">
+                <span class="stat-label">
+                  Eventos próximos
+                </span>
+
+                <strong id="eventStat">
+                  0
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="dashboard-section">
+
+              <div class="section-title">
+                <div>
+                  <span class="eyebrow">
+                    PRÓXIMO
+                  </span>
+
+                  <h2>Lo que viene</h2>
+                </div>
+
+                <button
+                  class="text-button"
+                  data-page="calendar"
+                >
+                  Ver calendario →
+                </button>
+              </div>
+
+
+              <div
+                id="upcomingList"
+                class="upcoming-list"
+              ></div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ACCIONES -->
+
+          <aside class="dashboard-side">
+
+            <button
+              class="action-card"
+              data-page="tasks"
+            >
+              <span class="action-icon">✓</span>
+
+              <strong>Nueva tarea</strong>
+
+              <small>
+                Añade algo que tengas que hacer.
+              </small>
+            </button>
+
+
+            <button
+              class="action-card"
+              data-page="calendar"
+            >
+              <span class="action-icon">□</span>
+
+              <strong>Calendario</strong>
+
+              <small>
+                Mira entregas, eventos y planes.
+              </small>
+            </button>
+
+
+            <button
+              class="action-card"
+              data-page="paint"
+            >
+              <span class="action-icon">✎</span>
+
+              <strong>Dibujar</strong>
+
+              <
+```
